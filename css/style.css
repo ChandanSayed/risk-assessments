@@ -730,3 +730,93 @@ footer {
     height: 45px;
   }
 }
+
+.bar,
+.hero-header .title,
+.hero-content-container,
+.section_carousel .subtitle,
+.footer-title {
+  opacity: 0;
+  -webkit-transform: translateX(-150px);
+  transform: translateX(-150px);
+}
+.hero-media,
+.slide-image {
+  opacity: 0;
+  -webkit-transform: translateX(150px);
+  transform: translateX(150px);
+}
+.hero-arrow,
+.topic-title-content,
+.slide-content {
+  opacity: 0;
+  -webkit-transform: translateY(-35px);
+  transform: translateY(-35px);
+}
+.carousel-topics,
+.slide-download-button,
+.footer-resources {
+  opacity: 0;
+}
+
+.bar.animated,
+.hero-header .title.animated,
+.hero-content-container.animated {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  --webkit-transition: opacity 1s ease, transform 1s ease;
+  transition: opacity 1s ease, transform 1s ease;
+}
+.section_carousel .subtitle.animated {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  --webkit-transition: opacity 1s ease 500ms, transform 1s ease 500ms;
+  transition: opacity 1s ease 500ms, transform 1s ease 500ms;
+}
+.hero-media.animated {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  --webkit-transition: opacity 1s ease, transform 1s ease;
+  transition: opacity 1s ease, transform 1s ease;
+}
+.hero-arrow.animated {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  --webkit-transition: opacity 1s ease 1.5s, transform 1s ease 1.5s;
+  transition: opacity 1s ease 1.5s, transform 1s ease 1.5s;
+}
+.carousel-topics.animated {
+  opacity: 1;
+  --webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+.topic-title-content.animated,
+.carousel-content-slide.animated .slide-content,
+.carousel-content-slide.animated .slide-image {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  --webkit-transition: opacity 1s ease 250ms, transform 1s ease 250ms;
+  transition: opacity 1s ease 250ms, transform 1s ease 250ms;
+}
+.carousel-content-slide.animated .slide-download-button {
+  opacity: 1;
+  --webkit-transition: opacity 1s ease 1s;
+  transition: opacity 1s ease 1s;
+}
+.footer-title.animated {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  --webkit-transition: opacity 1s ease 1s, transform 1s ease 1s;
+  transition: opacity 1s ease 1s, transform 1s ease 1s;
+}
+.footer-resources.animated {
+  opacity: 1;
+  --webkit-transition: opacity 1s ease 1.5s;
+  transition: opacity 1s ease 1.5s;
+}

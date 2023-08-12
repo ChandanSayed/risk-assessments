@@ -129,4 +129,30 @@ $(document).ready(function ($) {
       behavior: 'smooth'
     });
   });
+
+  var controller = new ScrollMagic.Controller({ globalSceneOptions: {} });
+
+  // build scenes
+  new ScrollMagic.Scene({ triggerElement: '#hero' }) //hero section
+    .setClassToggle('#hero .bar', 'animated')
+    .reverse(false)
+    .addTo(controller);
+  new ScrollMagic.Scene({ triggerElement: '#hero' }).setClassToggle('#hero .title', 'animated').reverse(false).addTo(controller);
+  new ScrollMagic.Scene({ triggerElement: '#hero' }).setClassToggle('#hero .hero-content-container', 'animated').reverse(false).addTo(controller);
+  new ScrollMagic.Scene({ triggerElement: '#hero' }).setClassToggle('#hero .hero-media', 'animated').reverse(false).addTo(controller);
+  new ScrollMagic.Scene({ triggerElement: '#hero' }).setClassToggle('#hero .hero-arrow', 'animated').reverse(false).addTo(controller);
+  new ScrollMagic.Scene({ triggerElement: '#carousel' }) //carousel section
+    .setClassToggle('#carousel .bar', 'animated')
+    .reverse(false)
+    .addTo(controller);
+  new ScrollMagic.Scene({ triggerElement: '#carousel' }).setClassToggle('#carousel .subtitle', 'animated').reverse(false).addTo(controller);
+  new ScrollMagic.Scene({ triggerElement: '#carousel' }).setClassToggle('#carousel .carousel-topics', 'animated').reverse(false).addTo(controller);
+  new ScrollMagic.Scene({ triggerElement: '#carousel' }).setClassToggle('#carousel .topic-title-content', 'animated').reverse(false).addTo(controller);
+  new ScrollMagic.Scene({ triggerElement: '#carousel' }).setClassToggle('#carousel .carousel-content-slide.slick-current', 'animated').reverse(false).addTo(controller);
+  new ScrollMagic.Scene({ triggerElement: '#footer' }) //footer section
+    .setClassToggle('#footer .bar', 'animated')
+    .reverse(false)
+    .addTo(controller);
+  new ScrollMagic.Scene({ triggerElement: '#footer' }).setClassToggle('#footer .footer-title', 'animated').reverse(false).addTo(controller);
+  new ScrollMagic.Scene({ triggerElement: '#footer' }).setClassToggle('#footer .footer-resources', 'animated').reverse(false).addTo(controller);
 });
